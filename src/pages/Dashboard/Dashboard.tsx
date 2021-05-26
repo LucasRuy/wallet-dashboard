@@ -1,8 +1,13 @@
 import React from 'react'
 
+import Header from '../../components/Header'
+
 const Dashboard: React.FC = () => {
   return (
-    <h1>Dashboard Screen</h1>
+    <div>
+      <Header>Dashboard Screen</Header>
+      <p>First page.</p>
+    </div>
   )
 }
 
