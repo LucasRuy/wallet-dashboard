@@ -14,14 +14,14 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-
+      
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-
+      
       - name: Install project dependencies
-      - run: yarn
-
+        run: yarn
+      
       - name: Run tests
-      - run: yarn test
+        run: yarn test
