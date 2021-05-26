@@ -1,4 +1,4 @@
-name: Main
+name: Jest
 
 on: [push, pull_request]
 
@@ -9,12 +9,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [14.x]
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
