@@ -1,10 +1,6 @@
-name: Run Jest
+name: Main
 
-on:
-  push:
-    branches: [develop]
-  pull_request:
-    branches: [develop]
+on: [push]
 
 jobs:
   test:
