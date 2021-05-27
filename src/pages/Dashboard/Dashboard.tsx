@@ -4,7 +4,9 @@ import Layout from '../../components/Layout'
 
 const Dashboard: React.FC = () => {
   return (
-    <Layout />
+    <div data-testid="dashboard">
+      <Layout />
+    </div>
   )
 }
 
