@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Layout from '../../components/Layout'
+
 const Dashboard: React.FC = () => {
   return (
-    <h1>Dashboard Screen</h1>
+    <div data-testid="dashboard">
+      <Layout />
+    </div>
   )
 }
 

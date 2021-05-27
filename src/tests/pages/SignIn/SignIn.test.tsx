@@ -1,13 +1,12 @@
-import { render, screen } from '@testing-library/react'
+import { render, queryByTestId } from '@testing-library/react'
 
 import SignIn from '../../../pages/SignIn'
 
 describe('<SignIn />', () => {
   test('Should be render "SignIn Screen" phrase', () => {
     render(<SignIn />)
-  
-    const linkElement = screen.getByText(/SignIn Screen/i)
-  
-    expect(linkElement).toBeInTheDocument()
+
+    const dashboard = queryByTestId(document.documentElement, 'sign-in')
+    expect(dashboard).toBeInTheDocument()
   })
 })
