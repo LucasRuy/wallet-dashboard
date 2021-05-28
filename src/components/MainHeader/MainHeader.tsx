@@ -4,6 +4,8 @@ import * as s from './styles'
 
 import emojis from '../../utils/emojis'
 
+import Toogle from '../Toogle'
+
 const MainHeader: React.FC = () => {
   const getEmoji = useMemo(() => {
     return emojis[Math.floor(Math.random() * emojis.length)];
@@ -11,7 +13,7 @@ const MainHeader: React.FC = () => {
 
   return (
     <s.Container>
-      <p>Toogle</p>
+      <Toogle />
       <s.Profile>
         <h3>Hello, {getEmoji}</h3>
         <span>User Name</span>
