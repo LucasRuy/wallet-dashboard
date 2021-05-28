@@ -4,7 +4,7 @@ export const Grid = styled.div`
   display: grid;
 
   grid-template-columns: 250px auto;
-  grid-template-rows: 50px auto;
+  grid-template-rows: 75px auto;
   grid-template-areas: 
   'AS MH'
   'AS CT';
