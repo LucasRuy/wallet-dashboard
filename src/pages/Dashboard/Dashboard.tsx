@@ -1,11 +1,15 @@
 import React from 'react'
 
-import Layout from '../../components/Layout'
+import ContentHeader from '../../components/ContentHeader'
+
+import * as s from './styles'
 
 const Dashboard: React.FC = () => {
   return (
     <div data-testid="dashboard">
-      <Layout />
+      <s.Container>
+        <ContentHeader />
+      </s.Container>
     </div>
   )
 }
