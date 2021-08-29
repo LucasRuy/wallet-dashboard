@@ -2,10 +2,10 @@ import React from 'react'
 
 import * as s from './styles'
 
-const Content: React.FC = () => {
+const Content: React.FC = ({ children }) => {
   return (
     <s.Container>
-      <p>Content</p>
+      {children}
     </s.Container>
   )
 }
