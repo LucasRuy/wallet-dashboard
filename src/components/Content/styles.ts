@@ -5,5 +5,6 @@ export const Container = styled.div(
     grid-area: CT;
     background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
+    padding: 25px 30px;
   `
 )
